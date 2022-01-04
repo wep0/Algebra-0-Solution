@@ -139,7 +139,9 @@ Suppose a function $f: A \rightarrow A'$ is surjective, assume $z \in Z$.
 
 $\exist a(z) \in A, f \circ a(z) = a'(z)$
 
-$f \circ a(z) \in A'$
+$\implies f(a(z)) = a'(z), a'(z) \in A'$
+
+$\implies f(x) = y, y \in A'$
 
 
 
