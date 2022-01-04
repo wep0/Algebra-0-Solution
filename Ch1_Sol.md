@@ -73,8 +73,6 @@ of two bijections is a bijection.
    
    Suppose $g$ is not bijection, and $g$ is not surjective or not injective. So, by Proposition 2.1, $g$ could not be a left-inverse or a right-inverse of $f$. However, because $f$ is bijective, it has both a left-inverse: $g \circ f = id_A$ and $f \circ g = id_B $, which is contridicted.  So, $g$ is a bijection.
 
-
-
 2. Assume $f: A \rightarrow B$ is a bijection, and $g: B \rightarrow C$ is a bijection. We want to prove $q = g \circ f$ is a bijection.
    
    **Lemma 1.1**: $q$ is surjective $\Rightarrow \forall a \in A, \exist c \in C, q(a) = c$
@@ -113,22 +111,36 @@ of two bijections is a bijection.
 
 Prove that ‘isomorphism’ is an equivalence relation (on any set of sets).
 
-
-
 Assume that $A, B$ are isomorphic sets, or $A \rightarrow B$ is a bijection. If its an equivalence relation we want to prove:
 
 ****reflexivity****： $A \rightarrow A$ is a bijection.
 
 ****symmetry****:    $A \rightarrow B$ is a bijection, proved in *Question 2.2*, its inverse $B \rightarrow A$ is also a bijection.
 
-**transitivity**:     As proved in *question 2.3*, $A \rightarrow B$ is a bijection,  $B \rightarrow C$ is a bijection, their composition $A \rightarrow B \rightarrow C \implies A \rightarrow C$  is a bijection as well.
-
-
-
-
-
-
-
-
+**transitivity**:   As proved in *question 2.3*, $A \rightarrow B$ is a bijection,  $B \rightarrow C$ is a bijection, their composition $A \rightarrow B \rightarrow C \implies A \rightarrow C$  is a bijection as well.
 
         
+
+## 2.5
+
+Suppose a function $f: A \rightarrow A'$ is epimorphism:
+
+For all sets $Z$ and all functions $a': Z\rightarrow A'$
+
+$\exist a: Z\rightarrow A, f \circ a = a'$
+
+
+
+*Proposition: A function is surjective iff it is a epimorphism.*
+
+**Proof**:
+
+Suppose a function $f: A \rightarrow A'$ is surjective, assume $z \in Z$.
+
+$\exist a(z) \in A, f \circ a(z) = a'(z)$
+
+$f \circ a(z) \in A'$
+
+
+
+
