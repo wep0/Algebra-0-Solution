@@ -63,8 +63,6 @@ $R / ∼$:  For each $p \in R/\sim, b - a \in Z, a, b \in p$, which means for ev
 
 $(a_1, a_2)≈(b_1, b_2), (a_1, a_2),(b_1, b_2) \in R × R$:  $a_1 \sim b_1, a_2 \sim b_2$
 
-
-
 ## 2.2
 
 Assume A != ∅, and let f : A → B be a function. Then 
@@ -81,7 +79,7 @@ of two bijections is a bijection.
 
 1. Assume $f: A \rightarrow B $ is a bijection, and it has an inverse $g: B \rightarrow A$.
    
-   Suppose $g$ is not bijection, and $g$ is not surjective or not injective. So, by Proposition 2.1, $g$ could not be a left-inverse or a right-inverse of $f$. However, because $f$ is bijective, it has both a left-inverse: $g \circ f = id_A$ and $f \circ g = id_B $, which is contridicted.  So, $g$ is a bijection.
+   Suppose $g$ is not bijection, and $g$ is not surjective or not injective. So, by Proposition 2.1, $g$ could not be a left-inverse or a right-inverse of $f$. However, because $f$ is bijective, it has both a left-inverse: $g \circ f = id_A$ and $f \circ g = id_B $, which is contradicted.  So, $g$ is a bijection.
 
 2. Assume $f: A \rightarrow B$ is a bijection, and $g: B \rightarrow C$ is a bijection. We want to prove $q = g \circ f$ is a bijection.
    
@@ -123,9 +121,9 @@ Prove that ‘isomorphism’ is an equivalence relation (on any set of sets).
 
 Assume that $A, B$ are isomorphic sets, or $A \rightarrow B$ is a bijection. If its an equivalence relation we want to prove:
 
-****reflexivity****： $A \rightarrow A$ is a bijection.
+**reflexivity**： $A \rightarrow A$ is a bijection.
 
-****symmetry****:    $A \rightarrow B$ is a bijection, proved in *Question 2.2*, its inverse $B \rightarrow A$ is also a bijection.
+**symmetry**:    $A \rightarrow B$ is a bijection, proved in *Question 2.2*, its inverse $B \rightarrow A$ is also a bijection.
 
 **transitivity**:   As proved in *question 2.3*, $A \rightarrow B$ is a bijection,  $B \rightarrow C$ is a bijection, their composition $A \rightarrow B \rightarrow C \implies A \rightarrow C$  is a bijection as well.
 
@@ -151,22 +149,16 @@ $\implies f(a(z)) = a'(z), a'(z) \in A'$
 
 $\implies f(x) = y, y \in A'$
 
-
-
 ## 2.6
 
 With notation as in Example 2.4, explain how any function $f : A → B$
 determines a section of $π_A$.
-
-
 
 Suppose $ a\in A, A \times B = (a, f(a))$
 
 $\pi_A = A\times B \rightarrow A = A\times (A \rightarrow B)(A) \rightarrow A$
 
 Construct a $g$ that makes $g \circ \pi_A = f$.
-
-
 
 ## 2.7
 
@@ -175,15 +167,11 @@ to$ A$.
 
 $Γ_A = \{(a,b) \in A \times B | b=f(a) \}\subseteq A \times B$
 
-
-
 **Surjective**: $ Γ_A = \{(a,b) \in A \times B | b=f(a) \}\subseteq A \times B$
 
 $\implies Γ_A = (a, f(a))$
 
 $\forall f: A \rightarrow B, \exist a \in A,\exist b = f(a)\implies \exist Γ_A = (a, f(a))$
-
-
 
 **Injective**:  
 
@@ -193,24 +181,58 @@ $Γ_A = {(a,f(a)) \subseteq \ A \times B }$
 
 $Γ_A' = {(a,f'(a)) \subseteq A \times B}$
 
-
-
 $f \neq f' \implies \exist a \in A, f(a) \neq f'(a)$
 
 $\implies \exist a \in A, (a,f(a)) \neq (a,f'(a))$
 
 $\implies Γ_A \neq Γ_A'$
 
-
-
-With surjectivity and injectivity, $Γ_A$ is isomorphic.
-
-
+With subjectivity and injectivity, $Γ_A$ is isomorphic.
 
 ## 2.8
 
 
 
+## 2.9
+
+We want to show $A' \cup B' \cong A'' \cup B'' \implies u: A'\cup B' \rightarrow A'' \cup B''$ is bijective.
+
+Known: $f: A' \rightarrow A'', g: B' \rightarrow B''$ are bijective.
+
+Since $A' \cap B' = \empty, A'' \cap B'' = \empty$
+
+$\implies \forall a' \in A', b' \in B' ,\ a' \notin B', b' \notin A' $
 
 
 
+$\forall y \in A'', y \notin B'', \exist x \in A', f(x) = y$
+
+$\forall y' \in B'', y \notin A'', \exist x' \in B', g(x') = y'$
+
+$\implies \forall y \in A'' \cup B'', \exist x \in A' \cup B', u(x)=y$, and it is surjective.
+
+
+
+$x', x'' \in A' \cup B', u(x') \neq u(x'') \implies x' \neq x''$
+
+Since $A' \cap B' = \empty$, for each $x \in A' \cup B'$, there are only two circustances:
+
+When $x \in A', x \notin B'$:
+
+$f: A' \rightarrow A''$ is injective, so $u$ is injectivein this circumstance. 
+
+When $x \notin A', x \in B'$:
+
+$g: B' \rightarrow B''$ is injective, so $u$ is injective in this circumstance.
+
+so, $u: A' \cup B' \rightarrow A'' \cup B''$ is injective.
+
+In conclusion, it is bijective.
+
+
+
+## 2.10
+
+Show that if $A$ and $B$ are finite sets, then $|B^A| = |B|^{|A|}$
+
+   
