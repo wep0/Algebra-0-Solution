@@ -215,11 +215,11 @@ $\implies \forall y \in A'' \cup B'', \exist x \in A' \cup B', u(x)=y$, and it i
 
 $x', x'' \in A' \cup B', u(x') \neq u(x'') \implies x' \neq x''$
 
-Since $A' \cap B' = \empty$, for each $x \in A' \cup B'$, there are only two circustances:
+Since $A' \cap B' = \empty$, for each $x \in A' \cup B'$, there are only two circumstances:
 
 When $x \in A', x \notin B'$:
 
-$f: A' \rightarrow A''$ is injective, so $u$ is injectivein this circumstance. 
+$f: A' \rightarrow A''$ is injective, so $u$ is injective in this circumstance. 
 
 When $x \notin A', x \in B'$:
 
@@ -236,3 +236,28 @@ In conclusion, it is bijective.
 Show that if $A$ and $B$ are finite sets, then $|B^A| = |B|^{|A|}$
 
    
+
+
+
+## 2.11
+
+Suppose $T = \{0, 1\}$
+
+$2^A$: Suppose the set of functions $F, \forall f \in F$, $f: A \rightarrow T $
+
+Power Set: Suppose the power set of functions $G$, $\forall g \in G$, $ g: A \rightarrow A \times A $
+
+We want to prove $F$ and $G$ are isomorphic.
+
+Suppose singleton $a \in A$
+
+Suppose a function $z: F \rightarrow G$
+
+Suppose a function $q: T \rightarrow A \times A$
+
+$\implies \{ A \rightarrow T \} \to \{ A \rightarrow A \times A\}$
+
+$\forall g \in G, \exist f \in F, z(f) = g$
+
+
+
