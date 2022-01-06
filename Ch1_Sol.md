@@ -63,6 +63,16 @@ $R / ∼$:  For each $p \in R/\sim, b - a \in Z, a, b \in p$, which means for ev
 
 $(a_1, a_2)≈(b_1, b_2), (a_1, a_2),(b_1, b_2) \in R × R$:  $a_1 \sim b_1, a_2 \sim b_2$
 
+
+
+## 2.2
+
+Assume A != ∅, and let f : A → B be a function. Then 
+
+(2) f has a right-inverse if and only if it is surjective
+
+Assume the right-inverse of $f$ is $g: B \rightarrow A$.  If $f: A \rightarrow B$ is not surjective, the image of $f$ is a subset of $B$ , called $B'$, instead of $B$.  We get $g(b'): B' \rightarrow A', b' \in B'$, and $A'$ is a subset of $A$ as well.  So, there must exist $b' \notin B', b' \in B$.  And $b'$ is not in the domain of $g$.
+
 ## 2.3.
 
 Prove that the inverse of a bijection is a bijection and that the composition
