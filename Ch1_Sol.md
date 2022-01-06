@@ -129,8 +129,6 @@ For all sets $Z$ and all functions $a': Z\rightarrow A'$
 
 $\exist a: Z\rightarrow A, f \circ a = a'$
 
-
-
 *Proposition: A function is surjective iff it is a epimorphism.*
 
 **Proof**:
@@ -142,6 +140,66 @@ $\exist a(z) \in A, f \circ a(z) = a'(z)$
 $\implies f(a(z)) = a'(z), a'(z) \in A'$
 
 $\implies f(x) = y, y \in A'$
+
+
+
+## 2.6
+
+With notation as in Example 2.4, explain how any function $f : A → B$
+determines a section of $π_A$.
+
+
+
+Suppose $ a\in A, A \times B = (a, f(a))$
+
+$\pi_A = A\times B \rightarrow A = A\times (A \rightarrow B)(A) \rightarrow A$
+
+Construct a $g$ that makes $g \circ \pi_A = f$.
+
+
+
+## 2.7
+
+Let $f : A → B $ be any function. Prove that the graph $Γ_f$ of $f$ is isomorphic
+to$ A$.
+
+$Γ_A = \{(a,b) \in A \times B | b=f(a) \}\subseteq A \times B$
+
+
+
+**Surjective**: $ Γ_A = \{(a,b) \in A \times B | b=f(a) \}\subseteq A \times B$
+
+$\implies Γ_A = (a, f(a))$
+
+$\forall f: A \rightarrow B, \exist a \in A,\exist b = f(a)\implies \exist Γ_A = (a, f(a))$
+
+
+
+**Injective**:  
+
+Prove: $f \neq f' \implies Γ_A \neq Γ_A'$
+
+$Γ_A = {(a,f(a)) \subseteq \ A \times B }$
+
+$Γ_A' = {(a,f'(a)) \subseteq A \times B}$
+
+
+
+$f \neq f' \implies \exist a \in A, f(a) \neq f'(a)$
+
+$\implies \exist a \in A, (a,f(a)) \neq (a,f'(a))$
+
+$\implies Γ_A \neq Γ_A'$
+
+
+
+With surjectivity and injectivity, $Γ_A$ is isomorphic.
+
+
+
+## 2.8
+
+
 
 
 
