@@ -235,4 +235,20 @@ In conclusion, it is bijective.
 
 Show that if $A$ and $B$ are finite sets, then $|B^A| = |B|^{|A|}$
 
-   
+$\forall a \in A, B^a = |B|$
+
+$\forall a, a' \in A, a \neq a', B^{a, a'} = |B| * |B|$ 
+
+$\forall A' \subset A , a \in A, a \notin A', B^{A'+ a} = |B|^{|A'|} * |B|$
+
+$|B^A| = |B|^{|A|}$
+
+
+
+## 2.11
+
+Power set: Suppose $f: A \rightarrow A \times A$
+
+$2^A$：the set of $A \rightarrow (0,1)$ 
+
+
