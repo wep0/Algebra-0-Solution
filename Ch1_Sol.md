@@ -249,21 +249,25 @@ $|B^A| = |B|^{|A|}$
 
 Suppose $T = \{0, 1\}$
 
-$2^A$: Suppose the set of functions $F, \forall f \in F$, $f: A \rightarrow T $
+$2^A$: Suppose the set of functions is $F: A \rightarrow T$, $\forall f \in F$, $f: a_1, a_2 \rightarrow (0,1) $
 
-Power Set: Suppose the power set of functions $G$, $\forall g \in G$, $ g: A \rightarrow A \times A $
+Power Set: Suppose the power set of $A$ is $P(A): A \rightarrow A \times A$, $\forall p \in P$, $ p: a_1, a_2 \rightarrow (a_1, a_2)$
 
-We want to prove $F$ and $G$ are isomorphic.
+We want to prove $F$ and $P(A)$ are isomorphic.
 
-Suppose singleton $a \in A$
+Suppose a function $z: f \rightarrow p$
 
-Suppose a function $z: F \rightarrow G$
+$\implies \{ a_1, a_2 \rightarrow (0,1) \} \to \{ a_1, a_2 \rightarrow (a_1, a_2)\}$
 
-Suppose a function $q: T \rightarrow A \times A$
+**Its is surjective**: $\forall p \in P(A), \exist f \in F, z(f) = p$ since there’s always a corresponding function $p$ with the same input and its output is $(a_1, a_2)$
 
-$\implies \{ A \rightarrow T \} \to \{ A \rightarrow A \times A\}$
+And it is **injective** when: $z(f) \neq z(f') \iff f \neq f'$.
 
-$\forall g \in G, \exist f \in F, z(f) = g$
+Assume $f = a_1, a_2 \rightarrow (a_1, a_2), f'= a_1', a_2' \rightarrow (a_1', a_2') $
+
+$\implies p = z(f) = a_1, a_2 \rightarrow (a_1, a_2), p' = z(f') = a_1', a_2' \rightarrow (a_1', a_2')$
+
+We could see $p \neq p' \iff a_1 \neq a_1'$ or $ a_2 \neq a_2' \iff f \neq f'$
 
 
 
